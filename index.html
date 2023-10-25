@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+            theme: {
+            extend: {
             colors: {
-              primaryColor: "#03262D",
-              secondaryColor: "#B54637",
+                primaryColor: "#03262D",
+                secondaryColor: "#B54637",
             },
-          },
+            },
         },
-      };
-    </script>
-  </head>
-  <body>
+    };
+        </script>
+    </head>
+    <body>
     <!-- Header -->
-    <header class="bg-primaryColor w-full">
-      <div class="container mx-auto"></div>
-    </header>
+        <header class="bg-primaryColor w-full">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <img
+                            src="assets/img/logo.png"
+                            alt=""  
+                        />
+                    </div>
+                    <div class="flex justify-end gap-5">
+                        <ul class="flex mt-2">
+                            <li class="mr-4 text-white"><a href="">Beranda</a></li>
+                            <li class="mr-4 text-white"><a href="">Produk</a></li>    
+                            <li class="mr-4 text-white"><a href="">Layanan</a></li>
+                        </ul>
+                        <div class="flex">
+                            <button class="bg-white text-primaryColor px-8 py-2 mr-4 font-bold ">Masuk</button>
+                            <button class="bg-primaryColor px-8 py-2 text-white border font-bold">Daftar</button>
+                        </div>
+                    </div>
+            </div>
+        </header>
     <!-- end header -->
+
     <!-- section 1 -->
-    <section class="hero"></section>
+    <section class="hero">
+
+    </section>
     <!-- section end  -->
     <!-- section 2 -->
-    <section class="section-2"></section>
+    <section class="section-2 bg-primaryColor">
+        <dl class="mt-16 p-10 justify-center w-full text-center grid grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Destinasi</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold  text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Tiket Terjual</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Pelanggan</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Review Pelanggan</dt>
+            </div>
+        </dl>
+    </section>
     <!-- section end  -->
     <!-- section 3 -->
     <section class="section-3"></section>
