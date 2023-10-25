@@ -6,11 +6,30 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              lemon: "'Lemon', serif",
+              quicksand: "'Quicksand', serif",
+            },
             colors: {
               primaryColor: "#03262D",
               secondaryColor: "#B54637",
@@ -20,14 +39,115 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-quicksand">
     <!-- Header -->
     <header class="bg-primaryColor w-full">
       <div class="container mx-auto"></div>
     </header>
     <!-- end header -->
     <!-- section 1 -->
-    <section class="hero"></section>
+    <section class="hero">
+      <div class="flex gap-2 justify-center">
+        <div
+          class="w-full bg-cover h-screen bg-left-top bg-[url('./assets/img/home.png')]"
+        >
+          <div class="mt-40 p-20">
+            <h1
+              class="text-white mt-[20rem] max-w-4xl text-5xl drop-shadow-lg font-lemon"
+            >
+              Bersama Kami Wujudkan Wisata Impian anda
+            </h1>
+          </div>
+        </div>
+        <div class="w-full h-screen p-20">
+          <div class="mt-40">
+            <h2 class="text-4xl font-bold text-primaryColor">Pilih Layanan</h2>
+            <div class="mt-10 flex gap-5">
+              <div
+                class="px-5 py-3 rounded-full border border-2 text-white text-4xl border-primaryColor bg-primaryColor"
+              >
+                <iconify-icon
+                  icon="mdi:airplane"
+                  class="mt-2"
+                ></iconify-icon>
+              </div>
+              <button
+                class="px-5 py-3 rounded-full border border-2 text-primaryColor text-4xl hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="mdi:bus"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+              <button
+                class="px-5 py-3 rounded-full border border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="material-symbols:train"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+              <button
+                class="px-5 py-3 rounded-full border border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="icon-park-solid:sleep-two"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+            </div>
+            <div class="mt-10 flex gap-10">
+              <div class="flex gap-4">
+                <input
+                  type="checkbox"
+                  name=""
+                  class="border p-5"
+                  id=""
+                />
+                <label for="">Sekali jalan</label>
+              </div>
+              <div class="flex gap-4">
+                <input
+                  type="checkbox"
+                  name=""
+                  class="border p-5"
+                  id=""
+                />
+                <label for="">Pulang pergi</label>
+              </div>
+            </div>
+            <div class="mt-10 flex gap-5">
+              <div class="input-box space-y-3">
+                <label for="">Dari</label>
+                <div class="flex gap-5 border border-2 border-primaryColor p-2">
+                  <span>
+                    <iconify-icon icon="mdi:airplane-takeoff"></iconify-icon>
+                  </span>
+                  <input
+                    type="text"
+                    class=""
+                    placeholder="kota atau bandara"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Dari</label>
+                <div class="flex gap-5 border border-2 border-primaryColor p-2">
+                  <span>
+                    <iconify-icon icon="mdi:airplane-takeoff"></iconify-icon>
+                  </span>
+                  <input
+                    type="text"
+                    class=""
+                    placeholder="kota atau bandara"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- section end  -->
     <!-- section 2 -->
     <section class="section-2"></section>
