@@ -31,40 +31,64 @@
               quicksand: "'Quicksand', serif",
             },
             colors: {
-              primaryColor: "#03262D",
-              secondaryColor: "#B54637",
+                primaryColor: "#03262D",
+                secondaryColor: "#B54637",
             },
-          },
+            },
         },
       };
     </script>
+    <style type="text/tailwindcss">
+      input{
+        @apply outline-none;
+      }
+    </style>
   </head>
   <body class="font-quicksand">
     <!-- Header -->
-    <header class="bg-primaryColor w-full">
-      <div class="container mx-auto"></div>
-    </header>
+        <header class="bg-primaryColor w-full">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <img
+                            src="assets/img/logo.png"
+                            alt=""  
+                        />
+                    </div>
+                    <div class="lg:flex hidden justify-end gap-5 ">
+                        <ul class="flex mt-2">
+                            <li class="mr-4 text-white"><a href="">Beranda</a></li>
+                            <li class="mr-4 text-white"><a href="">Produk</a></li>    
+                            <li class="mr-4 text-white"><a href="">Layanan</a></li>
+                        </ul>
+                        <div class="lg:flex hidden">
+                            <button class="bg-white text-primaryColor px-8 py-2 mr-4 font-bold ">Masuk</button>
+                            <button class="bg-primaryColor px-8 py-2 text-white border font-bold">Daftar</button>
+                        </div>
+                    </div>
+            </div>
+        </header>
     <!-- end header -->
     <!-- section 1 -->
     <section class="hero">
-      <div class="flex gap-2 justify-center">
+      <div class="lg:flex grid grid-cols-1 gap-2 justify-center">
         <div
-          class="w-full bg-cover h-screen bg-left-top bg-[url('./assets/img/home.png')]"
+          class="w-full bg-cover bg-cover bg-[url('./assets/img/home.png')]"
         >
-          <div class="mt-40 p-20">
+          <div class="lg:mt-40 mt-5 p-20">
             <h1
-              class="text-white mt-[20rem] max-w-4xl text-5xl drop-shadow-lg font-lemon"
+              class="text-white lg:mt-[20rem] mt-0 max-w-4xl text-5xl drop-shadow-lg font-lemon"
             >
               Bersama Kami Wujudkan Wisata Impian anda
             </h1>
           </div>
         </div>
-        <div class="w-full h-screen p-20">
-          <div class="mt-40">
+        <div class="w-full lg:h-screen h-auto p-20">
+          <div class="lg:mt-40 mt-10 lg:text-left text-center">
             <h2 class="text-4xl font-bold text-primaryColor">Pilih Layanan</h2>
-            <div class="mt-10 flex gap-5">
+            <div class="mt-10 lg:flex grid grid-cols-1 gap-5">
               <div
-                class="px-5 py-3 rounded-full border border-2 text-white text-4xl border-primaryColor bg-primaryColor"
+                class="px-5 py-3 rounded-full flex justify-center border border-2 text-white text-4xl border-primaryColor bg-primaryColor"
               >
                 <iconify-icon
                   icon="mdi:airplane"
@@ -116,33 +140,71 @@
                 <label for="">Pulang pergi</label>
               </div>
             </div>
-            <div class="mt-10 flex gap-5">
+            <div class="mt-10 lg:w-[70%] w-full grid lg:grid-cols-2 grid-cols-1 gap-5">
               <div class="input-box space-y-3">
                 <label for="">Dari</label>
-                <div class="flex gap-5 border border-2 border-primaryColor p-2">
-                  <span>
+                <div class="flex gap-5 border border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
                     <iconify-icon icon="mdi:airplane-takeoff"></iconify-icon>
                   </span>
                   <input
                     type="text"
-                    class=""
+                    class="p-3 w-full"
                     placeholder="kota atau bandara"
                   />
                 </div>
               </div>
               <div class="input-box space-y-3">
-                <label for="">Dari</label>
-                <div class="flex gap-5 border border-2 border-primaryColor p-2">
-                  <span>
-                    <iconify-icon icon="mdi:airplane-takeoff"></iconify-icon>
+                <label for="">Ke</label>
+                <div class="flex gap-5 border border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
+                    <iconify-icon icon="mdi:airplane-landing"></iconify-icon>
                   </span>
                   <input
                     type="text"
-                    class=""
+                    class="p-3 w-full"
+                    placeholder="Tujuan an"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Berangkat</label>
+                <div class="flex gap-5 border border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
+                    <iconify-icon icon="fe:calendar"></iconify-icon>
+                  </span>
+                  <input
+                    type="date"
+                    class="p-3 w-full"
                     placeholder="kota atau bandara"
                   />
                 </div>
               </div>
+              <div class="input-box space-y-3">
+                <label for="">Pulang</label>
+                <div class="flex gap-5 border border-2 border-primaryColor">
+                  <span class="p-3 text-2xl text-center">
+                    <iconify-icon icon="fe:calendar"></iconify-icon>
+                  </span>
+                  <input
+                    type="date"
+                    class="p-3 w-full"
+                    placeholder="Tujuan"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Penumpang & Kelas Kabin</label>
+                <div class="flex gap-5 border border-2 border-primaryColor">
+                  <select name="" id="" class="w-full p-3">
+                    <option value="">1 Penumpang, Ekonomi</option>
+                  </select>
+                </div>
+              </div>
+              
+            </div>
+            <div class="mt-8 flex justify-start">
+              <button class="bg-secondaryColor px-8 py-3 text-white lg:w-auto w-full">Cari Tiket</button>
             </div>
           </div>
         </div>
@@ -150,7 +212,26 @@
     </section>
     <!-- section end  -->
     <!-- section 2 -->
-    <section class="section-2"></section>
+    <section class="section-2 bg-primaryColor">
+        <div class="mt-0 p-10 justify-center w-full text-center grid grid-cols-2 gap-8  sm:grid-cols-2 lg:grid-cols-4">
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Destinasi</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold  text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Tiket Terjual</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Pelanggan</dt>
+            </div>
+            <div class="block w-full">
+                <dd class="text-2xl font-bold text-3xl leading-9 tracking-tight text-white">100+</dd>
+                <dt class="text-base leading-7 text-gray-300">Review Pelanggan</dt>
+            </div>
+        </div>
+    </section>
     <!-- section end  -->
     <!-- section 3 -->
     <section class="section-3"></section>
