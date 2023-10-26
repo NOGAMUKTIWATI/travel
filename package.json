@@ -1,0 +1,23 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahrullahh/travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahrullahh/travel/issues"
+  },
+  "homepage": "https://github.com/sahrullahh/travel#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

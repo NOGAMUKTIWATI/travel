@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body class="font-quicksand">
+    <!-- Header -->
+    <header class="bg-primaryColor w-full">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <img
+              src="./assets/img/logo.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:flex hidden justify-end gap-5">
+            <ul class="flex mt-2">
+              <li class="mr-4 text-white"><a href="">Beranda</a></li>
+              <li class="mr-4 text-white"><a href="">Produk</a></li>
+              <li class="mr-4 text-white"><a href="">Layanan</a></li>
+            </ul>
+            <div class="lg:flex hidden">
+              <button
+                class="bg-white text-primaryColor px-8 py-2 mr-4 font-bold"
+              >
+                Masuk
+              </button>
+              <button
+                class="bg-primaryColor px-8 py-2 text-white border font-bold"
+              >
+                Daftar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- section 1 -->
+    <section class="hero">
+      <div class="lg:flex grid grid-cols-1 gap-2 justify-center">
+        <div
+          class="w-full bg-cover"
+          style="background-image: url('./assets/img/home.png')"
+        >
+          <div class="lg:mt-10 mt-5 p-20">
+            <h1
+              class="text-white lg:mt-[20rem] mt-0 max-w-4xl text-5xl drop-shadow-lg font-lemon"
+            >
+              Bersama Kami Wujudkan Wisata Impian anda
+            </h1>
+          </div>
+        </div>
+        <div class="w-full h-auto p-20">
+          <div class="mt-10 lg:text-left text-center">
+            <h2 class="text-4xl font-bold text-primaryColor">Pilih Layanan</h2>
+            <div class="mt-10 lg:flex grid grid-cols-1 gap-5">
+              <div
+                class="px-5 py-3 rounded-full flex justify-center border-2 text-white text-4xl border-primaryColor bg-primaryColor"
+              >
+                <iconify-icon
+                  icon="mdi:airplane"
+                  class="mt-2"
+                ></iconify-icon>
+              </div>
+              <button
+                class="px-5 py-3 rounded-full border-2 text-primaryColor text-4xl hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="mdi:bus"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+              <button
+                class="px-5 py-3 rounded-full border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="material-symbols:train"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+              <button
+                class="px-5 py-3 rounded-full border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+              >
+                <iconify-icon
+                  icon="icon-park-solid:sleep-two"
+                  class="mt-2"
+                ></iconify-icon>
+              </button>
+            </div>
+            <div class="mt-10 flex gap-10">
+              <div class="flex gap-4">
+                <input
+                  type="checkbox"
+                  name=""
+                  class="border p-5"
+                  id=""
+                />
+                <label for="">Sekali jalan</label>
+              </div>
+              <div class="flex gap-4">
+                <input
+                  type="checkbox"
+                  name=""
+                  class="border p-5"
+                  id=""
+                />
+                <label for="">Pulang pergi</label>
+              </div>
+            </div>
+            <div
+              class="mt-10 lg:w-[70%] w-full grid lg:grid-cols-2 grid-cols-1 gap-5"
+            >
+              <div class="input-box space-y-3">
+                <label for="">Dari</label>
+                <div class="flex gap-5 border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
+                    <iconify-icon icon="mdi:airplane-takeoff"></iconify-icon>
+                  </span>
+                  <input
+                    type="text"
+                    class="p-3 w-full"
+                    placeholder="kota atau bandara"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Ke</label>
+                <div class="flex gap-5 border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
+                    <iconify-icon icon="mdi:airplane-landing"></iconify-icon>
+                  </span>
+                  <input
+                    type="text"
+                    class="p-3 w-full"
+                    placeholder="Tujuan an"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Berangkat</label>
+                <div class="flex gap-5 border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center">
+                    <iconify-icon icon="fe:calendar"></iconify-icon>
+                  </span>
+                  <input
+                    type="date"
+                    class="p-3 w-full"
+                    placeholder="kota atau bandara"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Pulang</label>
+                <div class="flex gap-5 border-2 border-primaryColor">
+                  <span class="p-3 text-2xl flex justify-center text-center">
+                    <iconify-icon icon="fe:calendar"></iconify-icon>
+                  </span>
+                  <input
+                    type="date"
+                    class="p-3 w-full"
+                    placeholder="Tujuan"
+                  />
+                </div>
+              </div>
+              <div class="input-box space-y-3">
+                <label for="">Penumpang & Kelas Kabin</label>
+                <div class="flex gap-5 border-2 border-primaryColor">
+                  <select
+                    name=""
+                    id=""
+                    class="w-full p-3"
+                  >
+                    <option value="">1 Penumpang, Ekonomi</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex justify-start">
+              <button
+                class="bg-secondaryColor px-8 py-3 text-white lg:w-auto w-full"
+              >
+                Cari Tiket
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end  -->
+    <!-- section 2 -->
+    <section class="section-2 bg-primaryColor">
+      <div
+        class="mt-0 container mx-auto p-10 justify-center w-full text-center grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="block w-full">
+          <dd class="font-bold text-3xl leading-9 tracking-tight text-white">
+            100+
+          </dd>
+          <dt class="text-base leading-7 text-gray-300">Destinasi</dt>
+        </div>
+        <div class="block w-full">
+          <dd class="font-bold text-3xl leading-9 tracking-tight text-white">
+            100+
+          </dd>
+          <dt class="text-base leading-7 text-gray-300">Tiket Terjual</dt>
+        </div>
+        <div class="block w-full">
+          <dd class="font-bold text-3xl leading-9 tracking-tight text-white">
+            100+
+          </dd>
+          <dt class="text-base leading-7 text-gray-300">Pelanggan</dt>
+        </div>
+        <div class="block w-full">
+          <dd class="font-bold text-3xl leading-9 tracking-tight text-white">
+            100+
+          </dd>
+          <dt class="text-base leading-7 text-gray-300">Review Pelanggan</dt>
+        </div>
+      </div>
+    </section>
+    <!-- section end  -->
+    <!-- section 3 -->
+    <section class="section-3">
+      <div class="container mx-auto mt-20">
+        <div class="lg:flex grid grid-cols-1 gap-5 w-full justify-center">
+          <div class="w-full">
+            <h2 class="text-primaryColor font-bold text-2xl">
+              Tempat Terpopuler
+            </h2>
+            <hr class="border-b mt-2 border-primaryColor max-w-lg" />
+            <p class="mt-5 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem,
+              expedita nam.
+            </p>
+            <div class="lg:flex gap-5 mt-5 hidden">
+              <button
+                class="bg-primaryColor px-8 py-2 text-white border font-bold"
+              >
+                Ponorogo
+              </button>
+              <button
+                class="bg-white border-primaryColor text-primaryColor px-8 py-2 border font-bold"
+              >
+                Bondowoso
+              </button>
+              <button
+                class="bg-white border-primaryColor text-primaryColor px-8 py-2 border mr-4 font-bold"
+              >
+                Probolinggo
+              </button>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex w-full justify-end mb-4">
+              <div
+                class="bg-primaryColor lg:w-[50%] w-full h-[3px] mt-10"
+              ></div>
+            </div>
+            <div class="flex gap-5 justify-end">
+              <button class="text-4xl">
+                <iconify-icon
+                  icon="mdi:arrow-left-circle-outline"
+                ></iconify-icon>
+              </button>
+              <button class="text-4xl">
+                <iconify-icon
+                  class="transform rotate-180"
+                  icon="mdi:arrow-left-circle-outline"
+                ></iconify-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid mt-20 gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center w-full"
+        >
+          <div class="card">
+            <img
+              src="./assets/img/card1.png"
+              alt=""
+              class="w-full"
+            />
+            <div class="p-5 bg-primaryColor text-white text-center">
+              <p class="text-2xl">Pantai Batu</p>
+            </div>
+            <div class="p-5 bg-white flex gap-5">
+              <div class="w-full">
+                <p class="text-lg">Startting Form:</p>
+                <h2 class="text-3xl text-secondaryColor uppercase">
+                  IDR 500.000
+                </h2>
+              </div>
+              <div class="w-full flex justify-end">
+                <button
+                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/img/card1.png"
+              alt=""
+              class="w-full"
+            />
+            <div class="p-5 bg-primaryColor text-white text-center">
+              <p class="text-2xl">Pantai Batu</p>
+            </div>
+            <div class="p-5 bg-white flex gap-5">
+              <div class="w-full">
+                <p class="text-lg">Startting Form:</p>
+                <h2 class="text-3xl text-secondaryColor uppercase">
+                  IDR 500.000
+                </h2>
+              </div>
+              <div class="w-full flex justify-end">
+                <button
+                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/img/card1.png"
+              alt=""
+              class="w-full"
+            />
+            <div class="p-5 bg-primaryColor text-white text-center">
+              <p class="text-2xl">Pantai Batu</p>
+            </div>
+            <div class="p-5 bg-white flex gap-5">
+              <div class="w-full">
+                <p class="text-lg">Startting Form:</p>
+                <h2 class="text-3xl text-secondaryColor uppercase">
+                  IDR 500.000
+                </h2>
+              </div>
+              <div class="w-full flex justify-end">
+                <button
+                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section end  -->
+    <!-- section 4 -->
+    <section class="section-4"></section>
+    <!-- section end  -->
+    <!-- section 5 -->
+    <section class="section-5"></section>
+    <!-- section end  -->
+    <!-- section 6 -->
+    <section class="section-6"></section>
+    <!-- section end  -->
+    <footer></footer>
+  </body>
+</html>
