@@ -23,7 +23,14 @@
       rel="stylesheet"
       href="./assets/css/style.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Swipper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src-"./assets/js/index.js"></script>
   </head>
   <body class="font-quicksand">
     <!-- Header -->
@@ -87,7 +94,7 @@
                 ></iconify-icon>
               </div>
               <button
-                class="px-5 py-3 rounded-full border-2 text-primaryColor text-4xl hover:text-white hover:bg-primaryColor border-primaryColor"
+                class="btn-circle"
               >
                 <iconify-icon
                   icon="mdi:bus"
@@ -95,7 +102,7 @@
                 ></iconify-icon>
               </button>
               <button
-                class="px-5 py-3 rounded-full border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+                class="btn-circle"
               >
                 <iconify-icon
                   icon="material-symbols:train"
@@ -103,7 +110,7 @@
                 ></iconify-icon>
               </button>
               <button
-                class="px-5 py-3 rounded-full border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor"
+                class="btn-circle"
               >
                 <iconify-icon
                   icon="icon-park-solid:sleep-two"
@@ -263,12 +270,12 @@
                 Ponorogo
               </button>
               <button
-                class="bg-white border-primaryColor text-primaryColor px-8 py-2 border font-bold"
+                class="btn-tab"
               >
                 Bondowoso
               </button>
               <button
-                class="bg-white border-primaryColor text-primaryColor px-8 py-2 border mr-4 font-bold"
+                class="btn-tab"
               >
                 Probolinggo
               </button>
@@ -295,84 +302,104 @@
             </div>
           </div>
         </div>
-        <div
-          class="grid mt-20 gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center w-full"
-        >
-          <div class="card">
-            <img
-              src="./assets/img/card1.png"
-              alt=""
-              class="w-full"
-            />
-            <div class="p-5 bg-primaryColor text-white text-center">
-              <p class="text-2xl">Pantai Batu</p>
-            </div>
-            <div class="p-5 bg-white flex gap-5">
-              <div class="w-full">
-                <p class="text-lg">Startting Form:</p>
-                <h2 class="text-3xl text-secondaryColor uppercase">
-                  IDR 500.000
-                </h2>
-              </div>
-              <div class="w-full flex justify-end">
-                <button
-                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
-                >
-                  Selengkapnya
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/img/card1.png"
-              alt=""
-              class="w-full"
-            />
-            <div class="p-5 bg-primaryColor text-white text-center">
-              <p class="text-2xl">Pantai Batu</p>
-            </div>
-            <div class="p-5 bg-white flex gap-5">
-              <div class="w-full">
-                <p class="text-lg">Startting Form:</p>
-                <h2 class="text-3xl text-secondaryColor uppercase">
-                  IDR 500.000
-                </h2>
-              </div>
-              <div class="w-full flex justify-end">
-                <button
-                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
-                >
-                  Selengkapnya
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./assets/img/card1.png"
-              alt=""
-              class="w-full"
-            />
-            <div class="p-5 bg-primaryColor text-white text-center">
-              <p class="text-2xl">Pantai Batu</p>
-            </div>
-            <div class="p-5 bg-white flex gap-5">
-              <div class="w-full">
-                <p class="text-lg">Startting Form:</p>
-                <h2 class="text-3xl text-secondaryColor uppercase">
-                  IDR 500.000
-                </h2>
-              </div>
-              <div class="w-full flex justify-end">
-                <button
-                  class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
-                >
-                  Selengkapnya
-                </button>
-              </div>
-            </div>
-          </div>
+        <div class="grid mt-20 gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center w-full">
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">   <div class="card">
+      <img
+        src="./assets/img/card1.png"
+        alt=""
+        class="w-full"
+      />
+      <div class="p-5 bg-primaryColor text-white text-center">
+        <p class="text-2xl">Pantai Batu</p>
+      </div>
+      <div class="p-5 bg-white flex gap-5">
+        <div class="w-full">
+          <p class="text-lg">Startting Form:</p>
+          <h2 class="text-3xl text-secondaryColor uppercase">
+            IDR 500.000
+          </h2>
+        </div>
+        <div class="w-full flex justify-end">
+          <button
+            class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+          >
+            Selengkapnya
+          </button>
+        </div>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="card">
+      <img
+        src="./assets/img/card1.png"
+        alt=""
+        class="w-full"
+      />
+      <div class="p-5 bg-primaryColor text-white text-center">
+        <p class="text-2xl">Pantai Batu</p>
+      </div>
+      <div class="p-5 bg-white flex gap-5">
+        <div class="w-full">
+          <p class="text-lg">Startting Form:</p>
+          <h2 class="text-3xl text-secondaryColor uppercase">
+            IDR 500.000
+          </h2>
+        </div>
+        <div class="w-full flex justify-end">
+          <button
+            class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+          >
+            Selengkapnya
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"> 
+      <div class="card">
+      <img
+        src="./assets/img/card1.png"
+        alt=""
+        class="w-full"
+      />
+      <div class="p-5 bg-primaryColor text-white text-center">
+        <p class="text-2xl">Pantai Batu</p>
+      </div>
+      <div class="p-5 bg-white flex gap-5">
+        <div class="w-full">
+          <p class="text-lg">Startting Form:</p>
+          <h2 class="text-3xl text-secondaryColor uppercase">
+            IDR 500.000
+          </h2>
+        </div>
+        <div class="w-full flex justify-end">
+          <button
+            class="px-5 py-2 font-bold text-2xl bg-secondaryColor text-white"
+          >
+            Selengkapnya
+          </button>
+        </div>
+      </div>
+    </div></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+       
+         
+        
         </div>
       </div>
     </section>

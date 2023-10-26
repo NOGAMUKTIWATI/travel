@@ -578,6 +578,10 @@ input {
   margin-right: auto;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -606,14 +610,6 @@ input {
   margin-top: 2rem;
 }
 
-.mr-0 {
-  margin-right: 0px;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -630,56 +626,16 @@ input {
   display: none;
 }
 
-.h-\[200px\] {
-  height: 200px;
+.h-\[3px\] {
+  height: 3px;
 }
 
 .h-auto {
   height: auto;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-\[4px\] {
-  height: 4px;
-}
-
-.h-\[8px\] {
-  height: 8px;
-}
-
-.h-\[2px\] {
-  height: 2px;
-}
-
-.h-\[3px\] {
-  height: 3px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .max-w-4xl {
@@ -688,10 +644,6 @@ input {
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .rotate-180 {
@@ -709,10 +661,6 @@ input {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .items-center {
@@ -777,10 +725,6 @@ input {
   border-bottom-width: 1px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-primaryColor {
   --tw-border-opacity: 1;
   border-color: rgb(3 38 45 / var(--tw-border-opacity));
@@ -799,10 +743,6 @@ input {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\/assets\/img\/home\.png\'\)\] {
-  background-image: url('./assets/img/home.png');
 }
 
 .bg-cover {
@@ -887,11 +827,6 @@ input {
   line-height: 1.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -932,14 +867,14 @@ input {
   color: rgb(3 38 45 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-secondaryColor {
   --tw-text-opacity: 1;
   color: rgb(181 70 55 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .drop-shadow-lg {
@@ -947,14 +882,41 @@ input {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.hover\:bg-primaryColor:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 38 45 / var(--tw-bg-opacity));
+.btn-circle {
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(3 38 45 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(3 38 45 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
+.btn-circle:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 38 45 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn-tab {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(3 38 45 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(3 38 45 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -982,8 +944,8 @@ input {
     display: flex;
   }
 
-  .lg\:grid {
-    display: grid;
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-\[70\%\] {
@@ -994,20 +956,16 @@ input {
     width: auto;
   }
 
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:text-left {
