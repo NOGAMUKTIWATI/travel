@@ -1,22 +1,33 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
-    slidesPerView: 3,
-  });
+  },
+});
