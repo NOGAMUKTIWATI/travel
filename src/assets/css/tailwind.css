@@ -7,3 +7,11 @@
     @apply outline-none;
   }
 }
+@layer utilities {
+  .btn-circle{
+    @apply px-5 py-3 rounded-full border-2 text-4xl text-primaryColor hover:text-white hover:bg-primaryColor border-primaryColor;
+  }
+  .btn-tab{
+    @apply bg-white border-primaryColor text-primaryColor px-8 py-2 border font-bold
+  }
+}
