@@ -614,6 +614,18 @@ input {
   margin-top: 9rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-\[rem\] {
+  margin-top: rem;
+}
+
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -636,6 +648,22 @@ input {
 
 .h-auto {
   height: auto;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[1\.5px\] {
+  height: 1.5px;
 }
 
 .w-full {
@@ -713,6 +741,18 @@ input {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -753,6 +793,10 @@ input {
   background-size: cover;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
@@ -767,6 +811,10 @@ input {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-5 {
@@ -794,8 +842,16 @@ input {
   padding-bottom: 1rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-lemon {
@@ -833,6 +889,11 @@ input {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
