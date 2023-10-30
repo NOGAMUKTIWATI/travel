@@ -32,7 +32,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swipper2= new Swiper(".swipper-2", {
+const swiper2 = new Swiper(".swiper-2", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -43,17 +43,16 @@ const swipper2= new Swiper(".swipper-2", {
   parallax: true,
   spaceBetween: 10,
 
+  // // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-next",
-    prevEl: ".swiper-prev",
-  },
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-next",
+  //   prevEl: ".swiper-prev",
+  // },
 
   breakpoints: {
     640: {
