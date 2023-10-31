@@ -670,6 +670,10 @@ input {
   width: 10%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -680,6 +684,38 @@ input {
 
 .max-w-\[10px\] {
   max-width: 10px;
+}
+
+.max-w-\[0px\] {
+  max-width: 0px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .rotate-180 {
