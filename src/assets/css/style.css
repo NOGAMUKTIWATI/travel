@@ -602,6 +602,10 @@ input {
   margin-top: 5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -610,20 +614,12 @@ input {
   margin-top: 2rem;
 }
 
-.mt-\[9rem\] {
-  margin-top: 9rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mt-\[rem\] {
-  margin-top: rem;
-}
-
 .mt-\[5rem\] {
   margin-top: 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .block {
@@ -642,96 +638,44 @@ input {
   display: none;
 }
 
-.h-\[3px\] {
-  height: 3px;
-}
-
-.h-auto {
-  height: auto;
+.h-\[1\.5px\] {
+  height: 1.5px;
 }
 
 .h-\[2px\] {
   height: 2px;
 }
 
-.h-\[1px\] {
-  height: 1px;
+.h-\[3px\] {
+  height: 3px;
 }
 
-.h-\[px\] {
-  height: px;
+.h-\[500px\] {
+  height: 500px;
 }
 
-.h-\[1\.5px\] {
-  height: 1.5px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[350\] {
-  height: 350;
-}
-
-.h-\[350px\] {
-  height: 350px;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-\[40px\] {
-  height: 40px;
-}
-
-.h-\[400px\] {
-  height: 400px;
+.h-auto {
+  height: auto;
 }
 
 .h-\[300px\] {
   height: 300px;
 }
 
-.h-\[30px\] {
-  height: 30px;
+.h-\[100px\] {
+  height: 100px;
 }
 
-.h-\[3250px\] {
-  height: 3250px;
+.h-\[200px\] {
+  height: 200px;
 }
 
-.h-\[250px\] {
-  height: 250px;
+.w-\[10\%\] {
+  width: 10%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[5\] {
-  width: 5;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[00px\] {
-  width: 00px;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .max-w-4xl {
@@ -881,10 +825,6 @@ input {
   padding: 2rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -916,10 +856,6 @@ input {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .font-lemon {
@@ -957,11 +893,6 @@ input {
 
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -1083,6 +1014,10 @@ input {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:w-0 {
+    width: 0px;
   }
 
   .lg\:w-\[50\%\] {
