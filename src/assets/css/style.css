@@ -654,24 +654,32 @@ input {
   height: auto;
 }
 
-.w-\[10\%\] {
-  width: 10%;
+.h-\[200px\] {
+  height: 200px;
+}
+
+.w-\[5\%\] {
+  width: 5%;
 }
 
 .w-full {
   width: 100%;
 }
 
+.w-\[10\%\] {
+  width: 10%;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
 
-.max-w-\[10px\] {
-  max-width: 10px;
-}
-
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-\[10px\] {
+  max-width: 10px;
 }
 
 .rotate-180 {
