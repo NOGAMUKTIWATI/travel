@@ -638,6 +638,10 @@ input {
   height: 1.5px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -646,76 +650,24 @@ input {
   height: 3px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-auto {
   height: auto;
-}
-
-.h-\[200px\] {
-  height: 200px;
-}
-
-.w-\[5\%\] {
-  width: 5%;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-\[10px\] {
-  max-width: 10px;
-}
-
-.max-w-\[0px\] {
-  max-width: 0px;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
-}
-
-.max-w-\[50px\] {
-  max-width: 50px;
-}
-
-.max-w-\[150px\] {
-  max-width: 150px;
 }
 
 .max-w-\[250px\] {
   max-width: 250px;
 }
 
-.max-w-\[350px\] {
-  max-width: 350px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .rotate-180 {
@@ -1046,10 +998,6 @@ input {
 
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:w-0 {
-    width: 0px;
   }
 
   .lg\:w-\[50\%\] {
