@@ -20,4 +20,25 @@
   .swiper-pagination .swiper-pagination-bullet-active {
     @apply bg-primaryColor;
   }
+  .swiper-testimonial-pagination .swiper-pagination-bullet {
+    @apply p-3 border-4 border-primaryColor bg-white;
+  }
+  .swiper-testimonial-pagination .swiper-pagination-bullet-active {
+    @apply bg-primaryColor;
+  }
+}
+
+.owl-carousel .owl-item.center .item-owl {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+.owl-carousel .owl-item .item-owl {
+  transform: scale(0.8);
+}
+
+.owl-carousel .owl-item .item-owl {
+  margin: 50px 0;
 }
