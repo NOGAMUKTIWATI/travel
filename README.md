@@ -8,20 +8,20 @@
 
 Tools menggunakan framework Tailwind CSS
 
-Sebelum menggunakan template ini design ini anda bisa run command:
+Sebelum menggunakan template design ini anda bisa run command:
 
 `npm install`
 
-jika anda belum punya perintah berikut diterminal pastikan anda sudah mengistall node js.
+jika anda belum punya perintah berikut diterminal pastikan anda sudah mengistall node js terlebih dahulu.
 
 =====================
 
-jika anda sudah tools node js tersebut anda langsung bisa jalan kan
+jika anda sudah punya tools node js tersebut, anda langsung bisa jalan kan
 
 `npm run dev`
 
 ====================
 
-Lihat Demo langsung:
+Lihat Demo Web langsung:
 
 [Lihat Web](https://travel-6esqxu2m3-nogas-projects.vercel.app/)
