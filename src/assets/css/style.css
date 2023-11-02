@@ -601,12 +601,12 @@ input {
   right: 50%;
 }
 
-.top-\[40\%\] {
-  top: 40%;
-}
-
 .top-0 {
   top: 0px;
+}
+
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .z-40 {
@@ -672,6 +672,10 @@ input {
 
 .mt-\[5rem\] {
   margin-top: 5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .block {
@@ -1136,6 +1140,10 @@ input {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-2\/4 {
