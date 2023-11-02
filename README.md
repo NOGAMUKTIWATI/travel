@@ -1,10 +1,10 @@
 # Travel Mlakuy
 
-## UI UX Design by David
+## Slicing Design by Noga Muktiwati
 
 ![image](https://github.com/NOGAMUKTIWATI/travel/assets/80508180/38163ee3-5191-42c6-9751-776f3652280c)
 
-## Slicing Design by Noga Muktiwati
+## UI UX Design by David
 
 Tools menggunakan framework Tailwind CSS
 
