@@ -601,12 +601,12 @@ input {
   right: 50%;
 }
 
-.top-\[40\%\] {
-  top: 40%;
-}
-
 .top-0 {
   top: 0px;
+}
+
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .z-40 {
@@ -620,10 +620,6 @@ input {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -652,14 +648,6 @@ input {
 
 .mt-24 {
   margin-top: 6rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mt-5 {
